@@ -9,5 +9,7 @@ function Split-NavApplicationObjectsTxt {
         [string]
         $destinationDirectory
     )
+    Initialize-NavModeltools
+    
     Split-NAVApplicationObjectFile -Source $sourceFile -Destination $destinationDirectory -Force -PreserveFormatting 
 }

@@ -7,6 +7,7 @@ function Get-NAVServerConfiguration2 {
     BEGIN {
         $ResultObjectArray = @()          
         
+        Initialize-NavAdminTool
     }
     PROCESS {   
         $CurrentServerInstance = Get-NAVServerInstance -ServerInstance $ServerInstance

@@ -17,7 +17,8 @@ function Export-NavApplicationObjectsAsTxt {
         [string]
         $useLicenceFileLocation
     )
-    
+    Initialize-NavModeltools
+
     if ($useLicenceFileLocation) {
         Backup-Licence
 

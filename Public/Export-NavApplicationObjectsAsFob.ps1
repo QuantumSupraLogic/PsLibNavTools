@@ -16,6 +16,7 @@ function Export-NavApplicationObjectsAsFob {
         [string]
         $filter
     )
-
+    Initialize-NavModeltools
+    
     Export-NAVApplicationObject -databaseserver $dataSource -DatabaseName $databaseName -Path $exportFile -Filter $Filter -Force | Out-Null
 }

@@ -6,6 +6,8 @@ function Restart-NavService {
         [switch]
         $startIfNotRunning
     )
+    Initialize-NavAdminTool
+    
     $serviceName = "MicrosoftDynamicsNavServer$" + $navServiceName
     $navService = Get-NavServerInstance | Where-Object { $_.ServerInstance -eq $serviceName }
     $service = Get-Service -Name $serviceName
