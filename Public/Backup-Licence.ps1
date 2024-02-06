@@ -1,3 +1,5 @@
+Set-StrictMode -Version 3.0
+
 function Backup-Licence {
     $PathToDevEnv = Split-Path -Path $config.DynamicsNavToolsModulePath
     if (Test-Path -Path (Join-Path $PathToDevEnv fin.flf)) {

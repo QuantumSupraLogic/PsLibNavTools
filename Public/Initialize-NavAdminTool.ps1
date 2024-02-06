@@ -1,3 +1,5 @@
+Set-StrictMode -Version 3.0
+
 function Initialize-NavAdminTool {
     Import-Module PsLibConfigurationManager
 
